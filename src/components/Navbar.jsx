@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className='md:hidden bg-white border-t border-gray-100 py-4'>
           <div className='container mx-auto px-4 space-y-4'>
             {menuItem.map((item, index) => (
-              <a onClick={() => setActiveLink(item.href)} 
+              <a onClick={() => {setActiveLink(item.href); setIsMenuOpen(false)}} 
               className={`block text-sm font-medium py-2 ${activeLink === item.href ? "text-blue-600" : "text-gray-600 hover:text-gray-900"}`} href={item.href} key={index}>{item.label}</a>
             ))}
 

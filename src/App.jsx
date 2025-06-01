@@ -6,6 +6,10 @@ import './index.css';
 import Preloader from "./components/Preloader";
 import Purpose from "./components/Purpose";
 import Features from "./components/Features";
+import Schedule from "./components/Schedule";
+import Monitor from "./components/Monitor";
+import Pricing from "./components/Pricing";
+import Service from "./components/Service";
 
 function App() {
 
@@ -29,6 +33,10 @@ function App() {
           <CompanyLogo />
           <Purpose />
           <Features />
+          <Schedule />
+          <Monitor />
+          <Pricing />
+          <Service />
         </div>
       </div>
     )

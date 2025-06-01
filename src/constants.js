@@ -1,7 +1,4 @@
 
-
-//   features section
-
   const feature = [
     {
       icon: "🔍", 
