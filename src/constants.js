@@ -47,7 +47,7 @@ const services = [
 
 //   testimonials section
 
-const testimonials = [
+export const testimonials = [
     {
       id: 1,
       name: "Robin Ayala Doe", 

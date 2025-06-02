@@ -31,3 +31,26 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
 }
+
+.testimonials-swipper {
+    padding: 20px;
+}
+
+.testimonials-swipper .swiper-slide {
+    height: auto
+}
+
+.testimonials-swipper .swiper-slide-next::after,
+.testimonials-swipper .swiper-slide-prev::after{
+    display: none;
+}
+
+.swiper-slide-next, .swiper-slide-prev {
+    display: none;
+}
+
+.swiper-button-next-custom.swiper-button-disabled,
+.swiper-button-prev-custom.swiper-button-disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}

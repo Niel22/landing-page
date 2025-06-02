@@ -10,6 +10,8 @@ import Schedule from "./components/Schedule";
 import Monitor from "./components/Monitor";
 import Pricing from "./components/Pricing";
 import Service from "./components/Service";
+import Testimonial from "./components/Testimonial";
+import Newsletter from "./components/Newsletter";
 
 function App() {
 
@@ -37,6 +39,8 @@ function App() {
           <Monitor />
           <Pricing />
           <Service />
+          <Testimonial />
+          <Newsletter />
         </div>
       </div>
     )
