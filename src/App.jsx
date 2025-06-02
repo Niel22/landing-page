@@ -12,6 +12,7 @@ import Pricing from "./components/Pricing";
 import Service from "./components/Service";
 import Testimonial from "./components/Testimonial";
 import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
           <Service />
           <Testimonial />
           <Newsletter />
+          <Footer />
         </div>
       </div>
     )

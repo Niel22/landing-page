@@ -49,7 +49,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className='py-16 px-4 max-w-7xl mx-auto'>
+    <div id='testimonials' className='py-16 px-4 max-w-7xl mx-auto'>
       <div className='text-center mb-12'>
         <h2 className='text-3xl font-bold md:text-4xl mb-4'>What out happy client says</h2>
         <p className='text-gray-600'>Things that makes it the best place to start trading</p>
