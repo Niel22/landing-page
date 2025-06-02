@@ -1,4 +1,5 @@
-import React from 'react'
+import { motion } from 'framer-motion';
+import { fadeIn } from '../utils/motion';
 
 const Purpose = () => {
 
@@ -20,20 +21,30 @@ const features = [
     <div id='about' className='w-full bg-gray-50 py-16 px-4 sm:px-6 md:px-8'>
       <div className='max-w-6xl mx-auto '>
         <div className='grid md:grid-cols-3 grid-cols-1 '>
-            <div className=''>
+            <motion.div 
+              variants={fadeIn("right", 0.3)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            className=''>
                 <p className='text-sm text-purple-600 font-medium mb-2'>ACHIEVE MORE</p>
                 <h2 className='text-3xl md:w-4/5 w-full md:text-4xl font-bold text-gray-900'>Purpose of a convoy is to keep your team</h2>
-            </div>
+            </motion.div>
 
             <div className='flex flex-col md:flex-row mt-10 gap-8 md:mt-0 md:col-span-2'>
                 {features.map((feature, index) => (
-                    <div key={index} className='flex justify-center items-start'>
+                    <motion.div 
+                      variants={fadeIn("left", 0.3 * (index + 1))}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true }}
+                    key={index} className='flex justify-center items-start'>
                         <div className='p-3'>{feature.icon}</div>
                         <div>
                             <h3 className='text-xl mb-2 font-bold'>{feature.title}</h3>
                             <p className='text-gray-600'>{feature.description}</p>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>
